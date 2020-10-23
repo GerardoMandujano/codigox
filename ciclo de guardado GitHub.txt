@@ -1,0 +1,59 @@
+abrir a nivel de aplication para empezar a utilizar los comandos
+Para crear una nueva rama
+$git branch @nombrerama
+
+actualizar rama local
+$ git checkout master -te conectas a la rama maestra para actualizar
+$ git pull -obtiene todos los cambios en la rama maestra
+
+$ git checkout @nombrerama -cambia a la rama local
+$ git merge origin/master -combina los cambios de la rama maestra con la rama local
+
+Subir cambio a rama maestra
+$ git  status  ->identifica los archivos modificados pendientes por subir
+$ git  add * -agrega los archivos que se desean actualizar
+$ git commit -describe los cambios realizados (titulo en mayusculas y separado por un espacio de cuerpo)
+$ git checkout master -se pasa a la rama maestra
+$ git pull -se jalan los cambios en la rama maestra
+$ git merge @nombrerama la local-se juntan los cambios en la rama maestra con los cambios locales
+$ git push -se suben los cambios
+$ git checkout @nombrerama -se pasa a la rama local
+$ git merge origin/master -se obtienen los datos del repositorio de origen
+
+
+git clone
+/////////////////////////////////////////////
+AUTENTIFICARSE PRIMERA VEZ EN UN EQUIPO
+$ git config --global user.name "nombreUser"
+$ git config --global user.email "correoUser@.gmail.com"
+$ git xonfig --global -L nos sirve para ver que usuario esta logueado
+NOTA PARA CAMBIAR DE USUARIO BASTA CON SOBRE ESCRIBIR AL USUARIO ANTERIOR
+///////////////////////////////////////////////////
+INIZIALIZAR UN NUEVO REPOSITORIO EN GIT
+te hubicas en la ruta donde quieras poner tu proyecto 
+E.J C:\wamp64\www y ejecutas el comando git init
+Con el comando git diff nos ayuda a identificar que cambios se realizaron entre archivos
+para revertir los cambios es el siguiente comando
+$ git checkout .
+El siguiente comando nos permite ver el historico de los cambios
+$git log
+
+///////////////////////////////////////////////////////////////
+Iniciar un repositorio desde la carpeta a subir 
+/////////////////////////////////////////////////////////
+
+$ git init 
+$ git commit -m "pueba-1" //comentario de subida
+$ git add README.md //archivo de comentarios 		
+$ git add * //[*]para agregar todos los archivos
+$ git remote add origin https://github.com/tu-usuario-/nombre-tu-repositorio.git //carga los archivos al repositorio
+$ git push -u origin master //añade los archivos al repositorio 
+
+
+
+
+
+
+ 
+ 
+
